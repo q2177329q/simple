@@ -3,7 +3,7 @@ node_js:
 - 7.9.0
 before_install:
 - openssl aes-256-cbc -K $encrypted_b1ccd02c1a29_key -iv $encrypted_b1ccd02c1a29_iv
-  -in .travis/id_rsa.enc -out id_rsa -d
+  -in id_rsa.enc -out id_rsa -d
 - mv id_rsa ~/.ssh -f
 - chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
